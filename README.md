@@ -1,5 +1,7 @@
 # Short Presentation of My Master
 
+My final presentation is [here](main.pdf).
+
 I would like to give credit where it is due. The following parts of this README explains where the theme I have used comes from. I have only included the files from that repository which were necessary for my presentation. Hopefully I am not breaking any license agreements. 
 
 
