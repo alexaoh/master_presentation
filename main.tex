@@ -122,16 +122,18 @@
         \end{column}
         \end{columns}
         }
+    \end{frame}
 
-        \onslide<2->{
-        Examples of Methods:
-        \begin{itemize}
-            \item Shapley Values and SHAP
-            \item LIME
-            \item Counterfactual Explanations (CEs) 
-        \end{itemize}
+    \begin{frame}[fragile]{XAI – How?}
+        \only<1>{
+            Examples of Methods:
+            \begin{itemize}
+                \item Shapley Values and SHAP
+                \item LIME
+                \item Counterfactual Explanations (CEs) 
+            \end{itemize}
         }
-        
+    
     \end{frame}
 
     \begin{frame}[fragile]{CEs — Example}
@@ -167,7 +169,6 @@
     \end{frame}
 
     \begin{frame}[fragile]{MCCE — Our Inspiration for Calculating CEs}
-
         \only<1>{
             \vspace{2em}
             MCCE: \textbf{M}onte \textbf{C}arlo sampling of realistic \textbf{C}ounterfactual \textbf{E}xplanations 
@@ -175,16 +176,17 @@
             \vfill
             Redelmeier, A., Jullum, M., Aas, K., \& Løland, A. (2021). MCCE: Monte Carlo sampling of realistic counterfactual explanations. arXiv preprint arXiv:2111.09790.
         }
+    \end{frame}
 
-        \onslide<2-3>{
+    \begin{frame}[fragile]{MCCE — Our Inspiration for Calculating CEs}
+        \onslide<1-2>{
             Steps:
             \begin{enumerate}
-                \item \alt<2>{Model underlying data distribution}{\textbf{Model underlying data distribution}}
-                \item \alt<2>{Sample from data distribution}{\textbf{Sample from data distribution}}
+                \item \alt<1>{Model underlying data distribution}{\textbf{Model underlying data distribution}}
+                \item \alt<1>{Sample from data distribution}{\textbf{Sample from data distribution}}
                 \item Post-process the samples, i.e. filter out counterfactuals
             \end{enumerate}
         }
-        
     \end{frame}
 
     \begin{frame}[fragile]{Generative Modelling with Diffusion Models}
@@ -203,23 +205,28 @@
         \includegraphics[width=0.9\linewidth]{figures/diffProcessIllustration.png}
         \label{Fig:DiffIllustration}
         \end{figure}
-        }
-        \only<2>{
+        }    
+    \end{frame}
+
+    \begin{frame}[fragile]{Diffusion Models — How?}
+        \only<1>{
             \begin{figure}[h]
             \centering
             \includegraphics[width=0.99\linewidth]{figures/gaussianForwardProcess.pdf}
             \label{Fig:GaussForwardIllustration}
             \end{figure}
         }
+    \end{frame}
 
-        \only<3>{
+
+    \begin{frame}[fragile]{Diffusion Models — How?}
+        \only<1>{
             \begin{figure}[h]
             \centering
             \includegraphics[width=0.99\linewidth]{figures/multinomialForwardProcess.pdf}
             \label{Fig:MultForwardIllustration}
             \end{figure}
         }
-        
     \end{frame}
 
     \begin{frame}[fragile]{Thesis Objectives}
@@ -275,7 +282,10 @@
         % \end{table}
         % \end{column}
         % \end{columns}
-        \only<2>{
+    \end{frame}
+
+    \begin{frame}[fragile]{Some Results}
+        \only<1>{
         \begin{table}
         \centering
         \caption{Factual $h$ and generated counterfactual for CatBoost classifier.}
@@ -304,5 +314,4 @@
         \end{table}
         }
     \end{frame}
-    
 \end{document}
